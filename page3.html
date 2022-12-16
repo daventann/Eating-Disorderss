@@ -16,7 +16,7 @@
         }
 
         body {
-            background-image: url('bg2.jpg');
+            background-image: url('../images/bg2.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -57,7 +57,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="home.html">
-                        <div class="navbarText" style="color:white; font-weight:bold">Home</div>
+                        <div class="navbarText" style="color:white">Home</div>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -67,7 +67,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="page3.html">
-                        <div class="navbarText" style="color:white">Help</div>
+                        <div class="navbarText" style="color:white; font-weight:bold">Help</div>
                     </a>
                 </li>
             </ul>
@@ -79,34 +79,39 @@
     <div class="container">
     <div class="row">
         <div class="col-3">
-            <div class="card">
+            <div class="card h-100">
                 <img src="images/unnamed.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Singapore Counselling Centre</h5>
                     <p class="card-text">
-                        <br> 51 Cuppage Road, #03-03, Singapore 229469
-                        <br> Phone: 6339 5411
+                        <br>Location: 51 Cuppage Road, #03-03, Singapore 229469
+                        <br>Phone: 6339 5411
                     </p>
-                    <a href="https://scc.sg/e/" class="btn btn-primary">learn more</a>
+                </div>
+                <div class="card-body">
+                    <!-- <div class="d-flex align-items-end"> -->
+                        <a href="https://scc.sg/e/" class="btn btn-primary">Learn more</a>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
         <div class="col-3">
-            <div class="card">
+            <div class="card h-100">
                 <img src="images/online-chat-service-in- Singapore-for-children-Tinkle-Friend-Online-Chat.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Tinkle Friend </h5>
                     <p class="card-text">
                         <br>Location: Singapore General Hospital, LIFE Centre, Bowyer Block
                         <br>Phone: 1800 274 4788
-                        <br>
+                <div class="card-body">
                     </p>
-                    <a href="https://www.tinklefriend.sg" class="btn btn-primary">learn more</a>
+                    <a href="https://www.tinklefriend.sg" class="btn btn-primary">Learn more</a>
+                </div>
                 </div>
             </div>
         </div>
         <div class="col-3">
-            <div class="card">
+            <div class="card h-100">
                 <img src="images/download.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">SGH Eating Disorders Programme</h5>
@@ -114,45 +119,71 @@
                         <br> Location: Singapore General Hospital, LIFE Centre, Bowyer Block
                         <br> Phone: 6321 4377
                     </p>
-                    <a href="https://www.sgh.com.sg/patient-care/specialties-services/Eating-Disorders-Programme" class="btn btn-primary">learn more</a>
+                <div class="card-body">
+                    <a href="https://www.sgh.com.sg/patient-care/specialties-services/Eating-Disorders-Programme" class="btn btn-primary">Learn more</a>
+                </div>
                 </div>
             </div>
         </div>
         <div class="col-3">
-            <div class="card">
+            <div class="card h-100">
                 <img src="images/Psychotherapy-500x300 (1).jpg.crdownload" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Better Life Clinic</h5>
                     <p class="card-text">
                         <br> Location: 10 Sinaran Drive, #08–17/30, Novena Medical Centre Singapore 307506
-                        <br> 6250 8077
-                        <br> better-life.sg
-                        <br> Email: clinic@better-life.sg
+                        <br> Phone: 6250 8077
                     </p>
-                    <a href="http://better-life.sg/" class="btn btn-primary">learn more</a>
+                <div class="card-body">
+                    <a href="http://better-life.sg/" class="btn btn-primary">Learn more</a>
+                </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <h1 class="text-center">Contact Form</h1>
-    <form class="text-center" action="/action_page.php" method="get">
-        <label for="fname">First name:</label>
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
-
-
-
+    <hr>
+    <div class="container">
+    <div class="row">
+    <div class="col-6">
+    <h1 class="text-start">Contact Form</h1>
+        <form>
+            <div class="row">
+                <div class="form-group col-md-6">
+                <label for="inputName">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-4">
+                <label for="inputEmail">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-8">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-8">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Stamford Rd">
+                    </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-5">
+                <label for="inputAddress">Contact Number</label>
+                <input type="text" class="form-control" id="inputNumber" placeholder="81234567">
+                    </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="col-6">
+        <img src="images/reach.png" alt="" width="500px" height="500px">
+    </div>
+    </div>
+    </div>
 </body>
 </html>
